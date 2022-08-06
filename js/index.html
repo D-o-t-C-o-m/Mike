@@ -7,10 +7,28 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="script.js"></script>
-    <script>
-        //Your Javascript goes here!
-        console.log("Hello, World!")
-    </script>
+    <!-- <script src="script.js"></script> -->
+   
+        
+        <button>Start machine</button>
+        <p> The machine is stopped. </p>
+
 </body>
+
+<script>
+    const btn = document.querySelector('button');
+    const txt = document.querySelector('p');
+
+btn.addEventListener('click', updateBtn);
+
+function updateBtn() {
+    if (btn.textContent === 'Start machine') {
+        btn.textContent = 'Stop machine';
+        txt.textContent = 'The machine is running!';
+    } else {
+        btn.textContent = 'Start machine';
+        txt.textContent = 'The machine is stopped.';
+    }
+}
+</script>
 </html>
