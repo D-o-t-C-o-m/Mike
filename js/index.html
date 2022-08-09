@@ -9,13 +9,28 @@
 <body>
     <!-- <script src="script.js"></script> -->
    
-        
-        <button>Start machine</button>
-        <p> The machine is stopped. </p>
+        <!-- This is the Machine -->
+        <!-- <button>Start machine</button>
+        <p> The machine is stopped. </p> -->
+
+        <!--This is Concatenation in action-->
+        <button>Press me</button>
+
 
 </body>
-
 <script>
+    const button = document.querySelector('button');
+
+function greet() {
+  const name = prompt('What is your name?');
+  alert(`Hello ${name}, nice to see you!`);
+}
+
+button.addEventListener('click', greet);
+
+</script>
+<!--The machine JS-->
+<!-- <script>
     const btn = document.querySelector('button');
     const txt = document.querySelector('p');
 
@@ -30,5 +45,5 @@ function updateBtn() {
         txt.textContent = 'The machine is stopped.';
     }
 }
-</script>
+</script> -->
 </html>
