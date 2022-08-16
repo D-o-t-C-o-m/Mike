@@ -7,10 +7,43 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="script.js"></script>
-    <script>
-        //Your Javascript goes here!
-        console.log("Hello, World!")
-    </script>
+    <!-- <script src="script.js"></script> -->
+   
+        <!-- This is the Machine -->
+        <!-- <button>Start machine</button>
+        <p> The machine is stopped. </p> -->
+
+        <!--This is Concatenation in action-->
+        <button>Press me</button>
+
+
 </body>
+<script>
+    const button = document.querySelector('button');
+
+function greet() {
+  const name = prompt('What is your name?');
+  alert(`Hello ${name}, nice to see you!`);
+}
+
+button.addEventListener('click', greet);
+
+</script>
+<!--The machine JS-->
+<!-- <script>
+    const btn = document.querySelector('button');
+    const txt = document.querySelector('p');
+
+btn.addEventListener('click', updateBtn);
+
+function updateBtn() {
+    if (btn.textContent === 'Start machine') {
+        btn.textContent = 'Stop machine';
+        txt.textContent = 'The machine is running!';
+    } else {
+        btn.textContent = 'Start machine';
+        txt.textContent = 'The machine is stopped.';
+    }
+}
+</script> -->
 </html>
